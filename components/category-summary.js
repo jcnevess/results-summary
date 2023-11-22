@@ -63,7 +63,7 @@ class CategorySummary extends HTMLElement {
       }
 
       .scoreboard {
-        color: lightgray;
+        color: hsla(224, 30%, 27%, 50%);
         text-align: right;
       }
 
