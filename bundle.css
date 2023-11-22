@@ -1,0 +1,132 @@
+/*           CSS RESET        */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+input, button, textarea, select {
+  font: inherit;
+}
+
+/*      USER STYLES         */
+:root {
+--color-light-slate-blue: hsl(252, 100%, 67%);
+--color-light-royal-blue: hsl(241, 81%, 54%);
+--gradient-background: linear-gradient(180deg, var(--color-light-slate-blue), var(--color-light-royal-blue));
+
+--color-violet-blue: hsla(256, 72%, 46%, 1);
+--color-persian-blue: hsla(241, 72%, 46%, 0);
+--gradient-circle: linear-gradient(180deg, var(--color-violet-blue), var(--color-persian-blue));
+
+--color-pale-blue: hsl(221, 100%, 96%);
+--color-light-lavender: hsl(241, 100%, 89%);
+--color-dark-gray-blue: hsl(224, 30%, 27%);
+}
+
+@font-face {
+  font-family: 'Hanken Grotesk';
+  src: url(./assets/fonts/HankenGrotesk-VariableFont_wght.ttf);
+}
+
+* {
+  font-family: 'Hanken Grotesk', sans-serif;
+}
+
+h1 {
+  font-size: 1rem;
+  margin-block: 0.25rem;
+}
+
+button {
+  color: white;
+  background-color: var(--color-dark-gray-blue);
+  border: none;
+  border-radius: 50px;
+  padding: 1rem;
+  font-weight: bold;
+  margin-block: 1.5rem;
+}
+
+category-summary {
+  margin-top: 1rem;
+}
+
+.overall-score {
+  color: white;
+  background: var(--color-light-slate-blue);
+  background: var(--gradient-background);
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px
+}
+
+.summary {
+  color: var(--color-dark-gray-blue);
+}
+
+.your-score {
+  font-weight: 700;
+  font-size: 3rem;
+  display: block;
+}
+
+.score {
+  background: var(--color-violet-blue);
+  background: var(--gradient-circle);
+  margin-block: 1.25rem;
+  padding: 2rem;
+  border-radius: 50%;
+  width: 150px;
+  aspect-ratio: 1;
+}
+
+.score span {
+  text-align: center;
+}
+
+.intro {
+  color: var(--color-light-lavender);
+  font-weight: bold;
+}
+
+.max-score {
+  color: var(--color-light-lavender);
+  font-weight: 700;
+  display: block;
+}
+
+.comparison {
+  color: var(--color-light-lavender);
+  text-align: center;
+  margin-top: 0.75rem;
+  font-size: 0.95rem;
+}
+
+.overall-score .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 70%;
+  margin: 0 auto;
+  padding: 1.25rem;
+  padding-bottom: 2rem;
+}
+
+.summary .container {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  margin: 1rem auto;
+}
+
+.concept {
+  font-size: 1.5rem;
+}

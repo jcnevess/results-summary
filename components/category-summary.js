@@ -57,17 +57,23 @@ class CategorySummary extends HTMLElement {
         grid-template-columns: 10% 60% 30%;
         font-weight: bold;
         align-items: center;
-        padding-block: 0.5rem;
+        padding: 0.75rem;
         border-radius: 10px;
         font-family: 'Hanken Grotesk', sans-serif;
       }
 
       .scoreboard {
         color: lightgray;
+        text-align: right;
       }
 
       .score {
         color: hsl(224, 30%, 27%);
+      }
+
+      .icon {
+        display: flex;
+        align-items: center;
       }
     `;
 
@@ -100,10 +106,6 @@ class CategorySummary extends HTMLElement {
         background-color: ${this.getAttribute("bg-color")}
       }
     `);
-  }
-
-  attributeChangedCallback(name, oldValue, newValue) {
-    console.log(`Attribute ${name} has changed.`);
   }
 }
 
