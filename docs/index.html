@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <link rel="stylesheet" href="./bundle.css" />
+
+    <title>Frontend Mentor | Results summary component</title>
+  </head>
+  <body>
+    <div class="outer-container">
+      <div class="overall-score">
+        <div class="container">
+          <div class="intro">Your Result</div>
+          <div class="score">
+            <span class="your-score">76</span>
+            <span class="max-score">of 100</span>
+          </div>
+          <h1 class="concept">Great</h1>
+          <div class="comparison">
+            You scored higher than 65% of the people who have taken these tests
+          </div>
+        </div>
+      </div>
+
+      <div class="summary">
+        <div class="container">
+          <h1>Summary</h1>
+          <category-summary
+            icon="./assets/images/icon-reaction.svg"
+            category="Reaction"
+            score="80"
+            color="hsl(0, 100%, 67%)"
+            bg-color="hsla(0, 100%, 67%, 5%)"
+          ></category-summary>
+          <category-summary
+            icon="./assets/images/icon-memory.svg"
+            category="Memory"
+            score="92"
+            color="hsl(39, 100%, 56%)"
+            bg-color="hsla(39, 100%, 56%, 5%)"
+          ></category-summary>
+          <category-summary
+            icon="./assets/images/icon-verbal.svg"
+            category="Verbal"
+            score="61"
+            color="hsl(166, 100%, 37%)"
+            bg-color="hsla(166, 100%, 37%, 5%)"
+          ></category-summary>
+          <category-summary
+            icon="./assets/images/icon-visual.svg"
+            category="Visual"
+            score="72"
+            color="hsl(234, 85%, 45%)"
+            bg-color="hsla(234, 85%, 45%, 5%)"
+          ></category-summary>
+          <button type="button">Continue</button>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script
+    type="text/javascript"
+    src="./components/category-summary.js"
+    async
+  ></script>
+</html>
