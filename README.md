@@ -1,6 +1,4 @@
-# Frontend Mentor - Results summary component solution
-
-This is a solution to the [Results summary component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/results-summary-component-CE_K6s0maV). 
+# Results summary component solution
 
 Developed with HTML, CSS, Javascript and its WebComponents.
 
@@ -60,4 +58,3 @@ I think Web components are a very powerful tool, but the module feels like a wor
 ## Author
 
 - Website - [Júlio Neves](https://jcnevess.github.io/)
-- Frontend Mentor - [@jcnevess](https://www.frontendmentor.io/profile/jcnevess)
